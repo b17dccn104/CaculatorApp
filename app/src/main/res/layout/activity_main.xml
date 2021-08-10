@@ -1,18 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/cardview_dark_background"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textview_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/title"
+        android:textSize="@dimen/dp_35"
+        android:textColor="@color/white"
+        android:paddingTop="@dimen/dp_35"
+        android:paddingLeft="@dimen/dp_20"
+        app:layout_constraintBottom_toTopOf="@id/edittext_input"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:id="@+id/edittext_input"
+        android:layout_width="@dimen/dp_365"
+        android:layout_height="@dimen/dp_130"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:background="@color/white"
+        android:gravity="end"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_30"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/textview_title" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        app:layout_constraintTop_toBottomOf="@id/edittext_input">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/button_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_90"
+                style="@style/Button_Style"
+                android:text="@string/Clear" />
+            <TextView
+                android:id="@+id/button_negativeinteger"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_90"
+                style="@style/Button_Style"
+                android:text="@string/plusminus"
+                android:onClick="nagativeIntegerEvent"/>
+            <TextView
+                android:id="@+id/button_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_90"
+                style="@style/Button_Style"
+                android:text="@string/percent"
+                android:onClick="percentEvent"/>
+            <TextView
+                android:id="@+id/button_division"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_90"
+                style="@style/Button_Style"
+                android:text="@string/button_div"
+                android:onClick="operatorEvent"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/button_7"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_90"
+                style="@style/Button_Style"
+                android:text="@string/number_7"
+                android:onClick="clickNumber"/>
+            <TextView
+                android:id="@+id/button_8"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_90"
+                style="@style/Button_Style"
+                android:text="@string/number_8"
+                android:onClick="clickNumber"/>
+            <TextView
+                android:id="@+id/button_9"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_90"
+                style="@style/Button_Style"
+                android:text="@string/number_9"
+                android:onClick="clickNumber"/>
+            <TextView
+                android:id="@+id/button_multiply"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_90"
+                style="@style/Button_Style"
+                android:text="@string/button_mul"
+                android:onClick="operatorEvent"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/button_4"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_90"
+                style="@style/Button_Style"
+                android:text="@string/number_4"
+                android:onClick="clickNumber"/>
+            <TextView
+                android:id="@+id/button_5"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_90"
+                style="@style/Button_Style"
+                android:text="@string/number_5"
+                android:onClick="clickNumber"/>
+            <TextView
+                android:id="@+id/button_6"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_90"
+                style="@style/Button_Style"
+                android:text="@string/number_6"
+                android:onClick="clickNumber"/>
+            <TextView
+                android:id="@+id/button_subtraction"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_90"
+                style="@style/Button_Style"
+                android:text="@string/button_sub"
+                android:onClick="operatorEvent"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_90"
+                style="@style/Button_Style"
+                android:text="@string/number_1"
+                android:onClick="clickNumber"/>
+            <TextView
+                android:id="@+id/button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_90"
+                style="@style/Button_Style"
+                android:text="@string/number_2"
+                android:onClick="clickNumber"/>
+            <TextView
+                android:id="@+id/button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_90"
+                style="@style/Button_Style"
+                android:text="@string/number_3"
+                android:onClick="clickNumber"/>
+            <TextView
+                android:id="@+id/button_addition"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_90"
+                style="@style/Button_Style"
+                android:text="@string/button_add"
+                android:onClick="operatorEvent"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/button_0"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_90"
+                style="@style/Button_Style"
+                android:text="@string/number_0"
+                android:onClick="clickNumber"/>
+            <TextView
+                android:id="@+id/button_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_90"
+                style="@style/Button_Style"
+                android:text="@string/button_dot"
+                android:onClick="clickNumber"/>
+            <TextView
+                android:id="@+id/button_equals"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_90"
+                android:layout_weight="1"
+                style="@style/Button_Style"
+                android:text="@string/button_equals"
+                android:onClick="showResult"/>
+        </TableRow>
+
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
