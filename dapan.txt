@@ -138,9 +138,12 @@ In order to communicate well, the Agile project should ...
 Keep team-size large, to avoid stakeholders feeling left out
 Break the project into small, mixed-skill, self-organising teams
 Operate with one team of less than 10 people
-aaaaa
+aaa
 Operate with separate customer, developer and test teams 
 
-bbbb
 
+bbbb
+dddd
+bbbb
 cccc
+
