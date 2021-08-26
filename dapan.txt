@@ -1,0 +1,141 @@
+Who is responsible for managing the progress of work during a Sprint?
+The Product Owner
+The Developers
+The most junior member of the team
+The Scrum Master
+Which statement best describes a Product Owner's responsibility?
+Optimizing the value of the work the Scrum Team does.
+Keep stakeholders from distracting the Developers.
+Directing the Developers
+Managing the project and ensuring that the work meets the commitments to the stakeholders.
+When does a Developer become accountable for the value of a Product Backlog item selected for the Sprint?
+Never. The entire Scrum Team is accountable for creating value every Sprint.
+During the Daily Scrum.
+Whenever a team member can accommodate more work.
+At the Sprint Planning Event.
+When might a Sprint be abnormally cancelled?
+When the sales department has an important new opportunity.
+When it becomes clear that not everything will be finished by the end of the Sprint.
+When the Sprint Goal becomes obsolete.
+When the Developers feel that the work is too hard.
+The length of a Sprint should be:
+Short enough to keep the business risk acceptable to the Product Owner.
+Short enough to be able to synchronize the development work with other business events.
+One month or less.
+All of the above.
+Who creates the Definition of Done?
+If it is not an organizational standard, the Scrum Team must create a Definition of Done appropriate for the product.
+The Scrum Master since they are responsible for the productivity of the Developers.
+The Scrum Team, in a collaborative effort where the result is the common denominator of all members' definitions.
+The Product Owner since they are responsible for the product's success.
+It is mandatory that the product Increment be released to production at the end of each Sprint.
+true
+false
+When does the next Sprint begin?
+Immediately after the conclusion of the previous Sprint.
+Immediately following the next Sprint Planning.
+When the Product Owner is ready
+Next Monday.
+What does it mean to say that an event has a timebox?
+The event must take at least a minimum amount of time.
+The event can take no more than a maximum amount of time.
+The event must happen at a set time.
+The event must happen by a given time.
+Which statement best describes the Sprint Review?
+It is a demo at the end of the Sprint for everyone in the organization to check on the work done.
+It is when the Scrum Team and stakeholders inspect the outcome of a Sprint and figure out what to do next
+It is a mechanism to control Developer activity during a Sprint
+When should the Developers on a Scrum Team should be replaced?
+As needed, while taking into account a short-term reduction in productivity.
+As needed, with no special allowance for changes in productivity.
+Every Sprint to promote shared learning.
+Never, it reduces productivity.
+The Scrum Team must choose at least one high priority process improvement item, identified during the Sprint Retrospective, and place it in the Sprint Backlog.
+true
+false
+The Agile way is
+To produce working product of the right quality, early and incrementally
+To produce working product after documentation has been signed off
+To produce simple prototypes early, but no finished product until the end of the project
+To produce products without technical integrity, but re-engineer later
+The Developers should have all the skills needed to:
+Do all of the development work, except for specialized testing that requires additional tools and environments.
+Turn the Product Backlog items they select into an Increment of useful and valuable product functionality.
+Complete the project as estimated when the date and cost are committed to the Product Owner.
+The Agile Manifesto states the following values:
+People are more important than contracts
+Plans should have priority over ability to respond
+Working software should have priority over comprehensive documentation
+Contracts should be negotiated which allow control over the people
+During a Sprint, a Developer determines that the Scrum Team will not be able to complete the items in their forecast. Who should be present to review and adjust the Product Backlog items selected?
+The Product Owner and the Developers.
+The Scrum Master, the project manager, and the Developers
+The Product Owner and all stakeholders.
+The Developers.
+The timebox for a Daily Scrum is?
+15 minutes.
+15 minutes for a 4-week sprint. For shorter Sprints it is usually shorter.
+The same time of day every day.
+Two minutes per person.
+The CEO asks the Developers to add a "very important" item to a Sprint that is in progress. What should the Developers do?
+Add the item to the next Sprint.
+Add the item to the current Sprint without any adjustments.
+Add the item to the current Sprint and drop an item of equal size.
+Inform the other members of the Scrum Team so the team can decide what to do.
+The purpose of a Sprint is to produce a valuable and useful Increment of working product.
+true
+false
+What is the main reason for the Scrum Master to be at the Daily Scrum?
+To gather status and progress information to report to management.
+He or she does not have to be there; he or she only has to ensure the Developers have a Daily Scrum
+To write down any changes to the Sprint Backlog, including adding new items, and tracking progress on the burn-down.
+To make sure every team member answers the three questions.
+Who is on the Scrum Team? (choose the best three answers)
+Developers
+Project Manager
+Stakeholder
+The Scrum Master
+The Product Owner
+The timebox for the Sprint Review is:
+2 hours.
+4 hours for a monthly Sprint. For shorter Sprints it is usually shorter.
+4 hours and longer as needed
+As long as needed
+What do all Agile approaches have in common?
+A prescribed, fixed iteration (Timebox) length
+Iterative development and incremental delivery
+A strict focus on on-time delivery
+A large set of clearly defined roles
+When many Scrum Teams are working on a single product, what best describes the Definition of Done?
+All Scrum Teams must have a Definition of Done that makes their combined Increment valuable and useful.
+it depends.
+Each Scrum Team uses its own, but must make their definition clear to all other teams so the differences are known.
+Scrum has a role called "project manager."
+true
+false
+Select three incorrect, untrue, or misleading statements about Scrum?
+Scrum is a methodology where you can pick and choose which parts of Scrum you think will work for your environment.
+Scrum is a framework for developing and sustaining complex products.
+Each component of Scrum serves a specific purpose and is essential to your ability to use Scrum to develop complex products.
+Scrum is like traditional processes but with self-organization to replace Project Managers.
+Scrum is a framework that eliminates complexity.
+The Product Backlog is ordered by:
+Whatever is deemed most appropriate by the Product Owner.
+Least valuable items at the top to most valuable at the bottom.
+Size, where small items are at the top and large items are at the bottom
+Risk, where safer items are at the top, and riskier items are at the bottom
+A Scrum Team consists of the following:
+Product Owner, Scrum Master, Team
+Product Owner, Scrum Master, Team, Customers, Users
+Product Owner, Scrum Master, Developers
+Developers, Product Owner, Scrum Master, Stakeholder
+The three pillars of empiricism are:
+Planning, Inspection, Adaptation
+Planning, Demonstration, Retrospective.
+Inspection, Transparency, Retrospective
+Inspection, Transparency, Adaptation.
+In order to communicate well, the Agile project should ...
+Keep team-size large, to avoid stakeholders feeling left out
+Break the project into small, mixed-skill, self-organising teams
+Operate with one team of less than 10 people
+Operate with separate customer, developer and test teams
