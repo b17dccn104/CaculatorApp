@@ -1,0 +1,228 @@
+1. Các lệnh cơ bản đẩy lên github
+- git init
+- git status : xem trạng thái các file   // git status --short/ -s : xem trạng thái ngắn 
+- git add .
+- git commit -m “…..”  //  git commit -a -m 'Add new benchmarks' : k cần câu lệnh git add đằng trước nữa
+- git remote add origin “location of remote repo”
+- git push -u origin master
+- git log
+- git --help
+
+2. Các lệnh cơ bản
+
+- touch test.txt : tạo 1 file test.txt
+
+- echo '# test line' >> test1.txt: thêm 1 dòng test line vào file test1.txt
+
+- git restore test.txt/ .: phục hồi file test.txt/ phục hồi hết tất cả file đã xóa từ commit cuối
+
+- git checkout mãCommit --tên File cần lấy lại dữ liệu từ macommit
+
+vd : git checkout ndn12 -- test1.txt : lấy lại dữ liệu file test1.txt từ maxcommit ndn12.
+     git checkout ndn12 -- .
+
+- git diff 		: xem chi tiết tất cả các thay đổi của file so với stage.  
+- git diff --staged     : xem chi tiết các thay đổi của satged so với commit mới nhất/--cached
+- git dif HEAD 	        : xem chi tiết tất cả các thay đổi của file so với commit mới nhất
+
+// git diff macommit1 macommit2 --stat
+
+- rm test.txt : xóa file test.txt
+
+- mv test.txt test2.txt : đổi file test -> test2
+
+- git log : liệt kê các cam kết được thực hiện trong kho lưu trữ đó theo thứ tự thời gian ngược lại; nghĩa là, các cam kết gần đây nhất sẽ hiển thị đầu tiên
+
+- git log --stat : hiển thị chi tiết các cam kết.
+
+- git log --oneline : hiển thị vắn tắt commit
+
+- git log tenfile : chỉ định tệp rồi hiển thị nhật ký
+
+- $ git log --since=2.weeks : lệnh này nhận danh sách các cam kết được thực hiện trong hai tuần qua
+
+//"2008-01-15"hoặc một ngày tương đối chẳng hạn "2 years 1 day 3 minutes ago".
+--git commit --amend : k sinh commit mới mà cập nhật thay đổi vào commit cuối cùng
+
+3. Lệnh git reset, hủy (undo) commit, xóa commit (cuối cùng)
+
+git reset --soft HEAD~1 : xóa commit cuối cùng và chuyển nội dung commit đó về trạng thái staged chứ k xóa hẳn đi
+
+git reset --hard HEAD~1 : xóa hẳn commit cuối cùng.
+
+git reset --test1.txt/ . : xóa file test1.txt ra khỏi vùng staged
+git rm --cached foo.txt
+
+4. Nhánh (branch)
+
+- git branch nhanh1 : tạo nhánh mới nhanh1
+
+- git checkout nhanh1 : chuyển sang nhánh 1
+      switch  
+
+- git checkout maCommit : chuyển sang commit 
+
+- git merge nhanh1 : gộp nhánh 1 vào nhánh hiện tại con trỏ đang trỏ tới.
+
+- git branch -d nhanh1 : xóa nhánh 1
+
+- git merge --abort : back lại trạng thái cũ nếu merge xung đột
+
+- git log --oneline --graph : hiển thị sơ đồ commit
+
+- git mergetool : hiển thị lỗi xung đột
+ 
+- git rebase beta : gộp nhánh beta vào master (cách gộp này khác merge) https://xuanthulab.net/lenh-git-merge-va-rebase-gop-va-viet-lai-lich-su-commit.html
+
+6. Làm việc với server
+
+- Kiểm tra xem nó đang ánh xạ đến Remote Repository nào:
+	git remote
+	git remote -v (Xem chi tiết hơn)
+
+- Thêm một Remote Repository vào local:
+	git remote add name_remote address_remote
+vd : 	git remote add origin gitusername@domain.com:myproject.git
+
+- Xem thông tin chi tiết 1 remote(origin)
+	git remote show origin
+
+- Xóa 1 remote trên Local:
+	git remote rm abc 
+
+- Đổi tên remote:
+	git remote rename abc xyz
+
++ PUSH
+
+- Đẩy 1 nhánh lên Remote:
+	git push name_remote tennhanh
+vd :	git push origin master
+	git push origin --all
+
+- Xem tất cả các nhánh Local lẫn Remote:
+	git branch -a
+
+- Xem thay đổi trước khi push
+	git diff --cached origin/master
+
+- Xóa 1 nhánh trên Remote : 
+	git push -delete name_remote tennhanh
+vd : 	git push -delete origin beta
+
++Clone
+
+- Tải kho chứa về máy (chỉ lấy nhánh master)
+	git clone https://github.com/thanhphatsainin/mac.git
+
+- Tải kho chứa về máy (nhánh master + các nhánh cần lấy về)
+	git clone https://github.com/thanhphatsainin/mac.git
+	git fetch                  
+	git checkout tennhanhcanlayve
+
+- Xem các cập nhật các thông tin từ Remote
+	git fetch tennhanhcankt
+
++ PULL
+
+- Cập nhật dữ liệu Local từ Remote về (lấy hết các commit về máy):
+	git pull name_remote tennhanhcancapnhat
+vd : 	git pull origin master
+	git pull origin --all
+
+- Gộp nhánh nếu PULL về bị xung đột
+	git merge name_remote/tennhanh
+vd : 	git merge origin/master
+
+8. Tag
+- Liệt kê các Tag
+	git tag Hoặc git tag -l hoặc git tag --list
+
+- Tạo ra một Tag mới đánh dấu vào commit cuối
+
+	git tag -a V1 -m "Phien ban thu nghiem" 	: Tạo ra một tag có tên beta với dòng chú thích Phien ban thu nghiem
+
+- Tạo ra một Tag mới đánh dấu vào commit cũ
+	git tag -a V1 -m "Phien ban thu nghiem 2" 9fceb02
+
+- Xem thông tin về commit được gắn tag
+	git show V1
+
+- Cập nhật tag lên Remote
+	git push origin V1
+
+- Cập nhật tất cả các tag
+	git push origin --tags
+
+- Quay về một phiên bản bằng Tag
+	git checkout V1
+
+- Tạo luôn nhánh branch mới bắt đầu từ tag
+	git checkout -b nhanhmoi V1
+
+- Xóa một tag
+	git push --delete origin beta :  xóa ở Remote
+	git tag -d beta               :  xóa ở Local
+
+
+
+- kéo remote về local 
+
+	git pull origin remote:local
+
+- đẩy local lên romote
+
+	git push origin local:remote
+
+
+- git commit --amend -m "fixfile3"
+- git push origin dev -f
+
+
+
+
+
+Anh cho em gửi report cuối ngày ạ.
+[info]
+[title]1. Plan:[/title]
+- Tìm hiểu chọn đề tài project 1.
+[/info]
+[info]
+[title]2. Actual:[/title]
+Đã tìm hiểu và thực hành: 
+- Create a database in CoreData.
+- Create object tables, create relationships between tables.
+- Display list, add, edit, delete data in the table.
+[/info]
+[info]
+[title]3. Next:[/title]
+- Tổng hợp ôn lại kiến thức IOS và làm bài test.
+[/info]
+[info]
+[title]4. Issue:[/title]
+ - E chưa có issue gì ạ.
+[/info]
+
+
+Anh cho em gửi report cuối ngày ạ.
+[info]
+[title]1. Plan:[/title]
+- Thiết kế giao diện project 1.
+[/info]
+[info]
+[title]2. Actual:[/title]
+Đã tìm hiểu và thực hành: 
+- Thiết kế giao diện project 1.
+[/info]
+[info]
+[title]3. Next:[/title]
+- Break task project 1.
+[/info]
+[info]
+[title]4. Issue:[/title]
+ - E chưa có issue gì ạ.
+[/info]
+
+
+Sua
+
