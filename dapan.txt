@@ -141,5 +141,9 @@ Operate with one team of less than 10 people
 aaa
 Operate with separate customer, developer and test teams 
 
+
 bbbb
 dddd
+bbbb
+cccc
+
